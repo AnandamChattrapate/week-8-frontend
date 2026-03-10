@@ -7,7 +7,8 @@ const AddUser = () => {
     const handleForm = async (data) => {
         console.log(data)
         try {
-            let res = await fetch("http://localhost:3000/user-api/users", {
+            // https://week-8-backend.onrender.com/
+            let res = await fetch("https://week-8-backend.onrender.com/user-api/users", {
                 method: "POST",
                 headers: {
                     "content-type": "application/json",
@@ -48,15 +49,14 @@ const AddUser = () => {
     <input
       type="date"
       {...register("dateOfBirth")}
-      className="border p-2 rounded"
-    />
-
+      className="border p-2 rounded"/>
     <button
       type="submit"
       className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
       Submit
     </button>
   </form>
+            
 </div>
         
     );

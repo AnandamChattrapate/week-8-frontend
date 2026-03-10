@@ -5,7 +5,7 @@ const UserList = () => {
     useEffect(()=>{
         async function getUsers(){
             try{
-                let res=await fetch("http://localhost:3000/user-api/users",
+                let res=await fetch("https://week-8-backend.onrender.com/user-api/users",
                 {
                     method:"GET"
                 })
